@@ -54,6 +54,7 @@ export async function getUser(email: string): Promise<Array<User>> {
   }
 }
 
+
 export async function createUser(email: string, password: string) {
   const hashedPassword = generateHashedPassword(password);
 
